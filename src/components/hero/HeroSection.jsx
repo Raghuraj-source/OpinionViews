@@ -4,7 +4,7 @@ import Ratings from './Ratings'
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-r from-[#0c2864] via-[#031552] to-[#080f50] py-24">
+    <section className="relative bg-gradient-to-r from-[#0c2864] via-[#031552] to-[#080f50] py-24 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0 lg:space-x-12">
         <div className="w-full lg:w-2/3">
           <div className="flex flex-col items-center text-center space-y-4">
@@ -53,7 +53,7 @@ export default function HeroSection() {
           </div>
           <Ratings />
         </div>
-        <div className="w-full lg:w-1/3 bg-[#2EC4B6] rounded-lg p-1 animate-fade-in-right">
+        <div className="w-full lg:w-1/3 bg-[#2EC4B6] rounded-lg p-1 animate-fade-in-right lg:mt-0 mt-8">
           <SignupForm />
         </div>
       </div>

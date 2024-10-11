@@ -86,11 +86,19 @@ body {
   animation: fadeInRight 1s ease-in-out;
 }
 
-/* @layer base {
+@layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
   }
-} */
+}
+@media (max-width: 640px) {
+  h1 {
+    background: linear-gradient(to right, #ff6f61, #ff9f1c, #2ec4b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

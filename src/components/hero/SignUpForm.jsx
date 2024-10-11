@@ -17,8 +17,8 @@ export default function SignupForm() {
   }
 
   return (
-    <div className="p-6 bg-[#410ba7] rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center text-white ">Sign up for free</h2>
+    <div className="p-6 sm:p-8 md:p-10 bg-[#410ba7] rounded-lg shadow-md">
+      <h2 className="text-2xl font-bold mb-4 text-center text-white">Sign up for free</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <Input 
           type="email" 
