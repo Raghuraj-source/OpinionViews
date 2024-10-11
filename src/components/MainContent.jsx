@@ -11,7 +11,7 @@ export default function MainContent() {
           in the next <span className="text-teal-400 animate-pulse">15 minutes</span>
         </h1>
         <p className="mb-8 text-lg sm:text-2xl text-gray-300 max-w-2xl mt-4 mx-auto">
-          We've got an incredible range of money-making opportunities in the form of tasks waiting for you.
+          We&apos;ve got an incredible range of money-making opportunities in the form of tasks waiting for you.
         </p>
         <div className="mb-10">
           <Ratings />
