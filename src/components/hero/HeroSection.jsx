@@ -9,9 +9,9 @@ export default function HeroSection() {
         <div className="w-full lg:w-2/3">
           <div className="flex flex-col items-center text-center space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter bg-gradient-to-r from-[#ff6f61] via-[#ff9f1c] to-[#2ec4b6] bg-clip-text text-transparent animate-fade-in drop-shadow-lg">
-              <span className="text-[#ff6f61] drop-shadow-md">Get paid</span> for testing apps,
+              <span className="text-[#ff6f61] drop-shadow-md">Get rewarded</span> for Apps, Playing
               <br />
-              games & surveys
+              games, and Taking Surveys
             </h1>
             <p className="text-xl md:text-2xl text-gray-400 animate-fade-in drop-shadow-md">
               Earn up to <span className="text-[#ff6f61] font-semibold drop-shadow-md">$30.24</span> per offer • <span className="text-[#ff6f61] font-semibold drop-shadow-md">520</span> available offers now

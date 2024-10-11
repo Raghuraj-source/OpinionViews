@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Header } from '@/components/Header'
 import HeroSection from "@/components/hero/HeroSection";
 import Statistics from "@/components/Statistics";
+import EarnSection from "@/components/EarnSection";
+import Footer from "@/components/Footer";
 // import SignupForm from "@/components/SignUp";
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
       {/* <Hero /> */}
       <HeroSection />
       <Statistics/>
+      <EarnSection />
+      <Footer />
     </div>
   );
 }
