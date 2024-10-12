@@ -46,7 +46,7 @@ const testimonials = [
   {
     rating: 5,
     title: "Great offers and great games",
-    content: "Honestly so thankful for sites like this! I have a full time job and it's still hard to make ends meet",
+    content: "Honestly so thankful for sites like this! I have a full time job and it&apos;s still hard to make ends meet",
     author: "Megan",
     date: "May 05, 2024",
     avatar: "/user.png"
@@ -57,9 +57,9 @@ export default function Testimonials() {
   return (
     <section className="bg-[#08205D] py-8 px-4 sm:px-6 lg:px-8"> {/* Reduced top padding */}
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold font-sans mb-6 text-center text-[#e2ad3b]">Everyone's talking about Opinion Views</h2>
+        <h2 className="text-5xl font-bold font-sans mb-6 text-center text-[#e2ad3b]">Everyone&apos;s talking about Opinion Views</h2>
         <p className="text-2xl font-bold font-sans mb-6 text-center text-[#e23bda]">
-          Join the Opinion Views Revolution Discover Why Everyone's Talking About Our Money-Making Platform!
+          Join the Opinion Views Revolution Discover Why Everyone&apos;s Talking About Our Money-Making Platform!
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {testimonials.map((testimonial, index) => (

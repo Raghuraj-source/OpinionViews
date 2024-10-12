@@ -8,8 +8,8 @@ export default function NumberOne() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-2">
-            We're the <span className="text-[#00ff7f]">#1</span> site to make money.{" "}
-            <span className="text-[#00ff7f]">Here's why:</span>
+            We&apos;re the <span className="text-[#00ff7f]">#1</span> site to make money.{" "}
+            <span className="text-[#00ff7f]">Here&apos;s why:</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Where profitable opportunity meets ease of use.
@@ -31,7 +31,7 @@ export default function NumberOne() {
           <FeatureCard
             icon={<TrendingUp className="w-8 h-8 text-[#00ff7f]" />}
             title="Go bigger"
-            description="The bigger the challenge, the sweeter the reward – and we're talking rewards that go above $40! Push your limits and earn more."
+            description="The bigger the challenge, the sweeter the reward – and we&apos;re talking rewards that go above $40! Push your limits and earn more."
           />
         </div>
       </div>
