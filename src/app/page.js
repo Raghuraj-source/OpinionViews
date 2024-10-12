@@ -5,6 +5,9 @@ import HeroSection from "@/components/hero/HeroSection";
 import Statistics from "@/components/Statistics";
 import EarnSection from "@/components/EarnSection";
 import Footer from "@/components/Footer";
+import HowItWorks from "@/components/HowItWorks";
+import FAQ from "@/components/FAQ";
+import Testimonials from "@/components/Testimonials";
 // import SignupForm from "@/components/SignUp";
 export default function Home() {
   return (
@@ -13,7 +16,10 @@ export default function Home() {
       {/* <Hero /> */}
       <HeroSection />
       <Statistics/>
+      <HowItWorks />
       <EarnSection />
+      <Testimonials />
+      <FAQ />
       <Footer />
     </div>
   );

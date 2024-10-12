@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Ratings from "./hero/Ratings"
+import Image from "next/image"
 
 export default function MainContent() {
   return (
@@ -19,6 +20,21 @@ export default function MainContent() {
         <Button className="bg-teal-500 hover:bg-teal-400 text-white text-lg px-10 py-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 shadow-lg">
           Sign Up Now
         </Button>
+      </div>
+      <div className="mt-12">
+        <h2 className="text-2xl font-bold text-white text-center mb-8">Recommended by</h2>
+        <div className="flex flex-wrap justify-center items-center space-y-6 sm:space-y-0 sm:space-x-4">
+        <div className="relative h-20 w-20">
+          <Image src="/DiceDreams.jpg" alt="Paid From Surveys" layout="fill" objectFit="contain" />
+        </div>
+       
+        <div className="relative h-20 w-20">
+          <Image src="/netflix.png" alt="Survey Police" layout="fill" objectFit="contain" />
+        </div>
+        <div className="relative h-20 w-20">
+          <Image src="/tiktok-logo-icon.png" alt="inBrain.ai" layout="fill" objectFit="contain" />
+        </div>
+        </div>
       </div>
     </div>
   )

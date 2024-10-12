@@ -1,4 +1,5 @@
 import { Rocket, Flame } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Statistics() {
   return (
@@ -26,11 +27,17 @@ export default function Statistics() {
       
       <div className="mt-12">
         <h2 className="text-2xl font-bold text-white text-center mb-8">Recommended by</h2>
-        <div className="flex flex-wrap justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-          <img src="/paid-from-surveys.png" alt="Paid From Surveys" className="h-8" />
-          <img src="/benzinga.png" alt="Benzinga" className="h-8" />
-          <img src="/surveypolice.png" alt="Survey Police" className="h-8" />
-          <img src="/inbrain-ai.png" alt="inBrain.ai" className="h-8" />
+        <div className="flex flex-wrap justify-center items-center space-y-6 sm:space-y-0 sm:space-x-4">
+        <div className="relative h-20 w-20">
+          <Image src="/DiceDreams.jpg" alt="Paid From Surveys" layout="fill" objectFit="contain" />
+        </div>
+       
+        <div className="relative h-20 w-20">
+          <Image src="/netflix.png" alt="Survey Police" layout="fill" objectFit="contain" />
+        </div>
+        <div className="relative h-20 w-20">
+          <Image src="/tiktok-logo-icon.png" alt="inBrain.ai" layout="fill" objectFit="contain" />
+        </div>
         </div>
       </div>
     </div>
