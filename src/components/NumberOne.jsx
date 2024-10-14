@@ -4,7 +4,7 @@ import { Banknote, Flag, TrendingUp } from "lucide-react";
 
 export default function NumberOne() {
   return (
-    <div className="bg-[#08205D] min-h-screen py-12 px-4 sm:px-6 lg:px-8 pt-1 mb-2"> {/* Reduced bottom margin */}
+    <div className="bg-[#08205D] min-h-screen py-1 px-4 sm:px-6 lg:px-8 pt-1 mb-2"> {/* Reduced bottom margin */}
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-white mb-2">

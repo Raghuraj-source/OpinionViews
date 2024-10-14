@@ -3,31 +3,31 @@ import Image from 'next/image';
 import { Card } from "@/components/ui/card";
 
 const cashOptions = [
-  { name: 'PayPal', icon: '/icons/paypal.svg', color: 'bg-blue-500' },
-  { name: 'Bitcoin', icon: '/icons/bitcoin.svg', color: 'bg-orange-400' },
-  { name: 'Airtm', icon: '/icons/airtm.svg', color: 'bg-blue-400' },
-  { name: 'Stake', icon: '/icons/stake.svg', color: 'bg-teal-900' },
-  { name: 'Ethereum', icon: '/icons/ethereum.svg', color: 'bg-purple-500' },
-  { name: 'Litecoin', icon: '/icons/litecoin.svg', color: 'bg-slate-500' },
-  { name: 'Dogecoin', icon: '/icons/dogecoin.svg', color: 'bg-yellow-400' },
-  { name: 'Bank Transfer', icon: '/icons/bank.svg', color: 'bg-green-700' },
+  { name: 'PayPal', icon: '/paypal.png', color: 'bg-blue-500' },
+  { name: 'Bitcoin', icon: '/bitcoin.svg', color: 'bg-red-300' },
+  { name: 'Airtm', icon: '/airtm.png', color: 'bg-blue-400' },
+  { name: 'Stake', icon: '/stake.jpg', color: 'bg-teal-900' },
+  { name: 'Ethereum', icon: '/Ethereum.png', color: 'bg-purple-500' },
+  { name: 'Litecoin', icon: '/litecoin.png', color: 'bg-slate-500' },
+  { name: 'Dogecoin', icon: '/dogecoin.png', color: 'bg-yellow-400' },
+  { name: 'Bank Transfer', icon: '/bank.png', color: 'bg-green-700' },
 ];
 
 const giftcardOptions = [
-  { name: 'Amazon', icon: '/icons/amazon.svg', color: 'bg-slate-900' },
-  { name: 'Visa', icon: '/icons/visa.svg', color: 'bg-blue-700' },
-  { name: 'Google Play', icon: '/icons/google-play.svg', color: 'bg-gradient-to-r from-blue-500 to-green-500' },
-  { name: 'Apple', icon: '/icons/apple.svg', color: 'bg-gradient-to-r from-pink-500 to-purple-500' },
-  { name: 'Netflix', icon: '/icons/netflix.svg', color: 'bg-red-600' },
-  { name: 'Spotify', icon: '/icons/spotify.svg', color: 'bg-green-500' },
-  { name: 'Zalando', icon: '/icons/zalando.svg', color: 'bg-orange-500' },
-  { name: 'Steam', icon: '/icons/steam.svg', color: 'bg-blue-900' },
+  { name: 'Amazon', icon: '/amazon.jpg', color: 'bg-slate-900' },
+  { name: 'Visa', icon: '/visa.png', color: 'bg-blue-700' },
+  { name: 'Google Play', icon: '/google-play.webp', color: 'bg-gradient-to-r from-blue-500 to-green-500' },
+  { name: 'Apple', icon: '/apple.png', color: 'bg-gradient-to-r from-pink-500 to-purple-500' },
+  { name: 'Netflix', icon: '/netflix-icon.jpg', color: 'bg-red-600' },
+  { name: 'Spotify', icon: '/spotify.png', color: 'bg-green-500' },
+  { name: 'Zalando', icon: '/zalando.png', color: 'bg-orange-500' },
+  { name: 'Steam', icon: '/stream.webp', color: 'bg-blue-900' },
 ];
 
 function WithdrawalOption({ name, icon, color }) {
   return (
     <Card className={`${color} p-4 flex flex-col items-center justify-center rounded-lg aspect-[3/4]`}>
-      <Image src={icon} alt={name} width={40} height={40} className="mb-2" />
+      <Image src={icon} alt={name} width={80} height={80} className="mb-2" />
       <p className="text-white text-sm font-medium text-center">{name}</p>
     </Card>
   );
