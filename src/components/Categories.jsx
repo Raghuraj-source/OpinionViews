@@ -61,8 +61,8 @@ export default function Categories() {
   return (
     <section className="bg-[#08205D] py-2">
       <div className="container mx-auto px-2">
-        <h2 className="text-4xl font-bold bg-gradient-to-r from-[#ff6f61] via-[#ff9f1c] to-[#2ec4b6] bg-clip-text text-transparent text-center mb-4">Categories</h2>
-        <p className="bg-gradient-to-r from-[#ff6f61] via-[#ff9f1c] to-[#2ec4b6] bg-clip-text text-transparent text-center mb-12 max-w-2xl mx-auto">
+        <h2 className="text-4xl font-bold text-amber-500 text-center mb-4">Categories</h2>
+        <p className="text-amber-500 text-center mb-12 max-w-2xl mx-auto">
           Discover the perfect offer tailored just for you. Explore our categories below to find offers that match your interests.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
