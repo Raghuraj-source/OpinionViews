@@ -22,7 +22,7 @@ export default function MainContent() {
         </Button>
       </div>
       <div className="mt-12">
-        <h2 className="text-2xl font-bold text-white text-center mb-8">Recommended by</h2>
+        <h2 className="text-2xl font-bold text-[#e2ad3b] text-center mb-8">Recommended by</h2>
         <div className="flex flex-wrap justify-center items-center space-y-6 sm:space-y-0 sm:space-x-4">
         <div className="relative h-20 w-20">
           <Image src="/DiceDreams.jpg" alt="Paid From Surveys" layout="fill" objectFit="contain" />

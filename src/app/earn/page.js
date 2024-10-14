@@ -1,4 +1,5 @@
 // import EarnSection from "@/components/EarnSection";
+import Categories from "@/components/Categories";
 import EarnSections from "@/components/EarnSections";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -15,6 +16,7 @@ export default function Home() {
       <Header />
       {/* <EarnSection /> */}
       <MainContent />
+      <Categories />
       <HowItWorks />
       <EarnSections />
       <NumberOne />

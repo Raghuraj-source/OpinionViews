@@ -1,7 +1,7 @@
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
-import Hero from "@/components/hero";
+import Hero from "@/components/CashoutHero";
 import HowItWorks from "@/components/HowItWorks";
 import Testimonials from "@/components/Testimonials";
 import WithdrawalOptions from "@/components/WithdrawalOptions";
