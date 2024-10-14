@@ -89,7 +89,7 @@ export default function Testimonials() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Everyone's talking about Opinion Views
+          Everyone&apos;s talking about Opinion Views
         </motion.h2>
         <motion.p 
           className="text-2xl font-bold font-sans mb-6 text-center text-[#e23bda]"
@@ -97,7 +97,7 @@ export default function Testimonials() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Join the Opinion Views Revolution Discover Why Everyone's Talking About Our Money-Making Platform!
+          Join the Opinion Views Revolution Discover Why Everyone&apos;s Talking About Our Money-Making Platform!
         </motion.p>
         <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
