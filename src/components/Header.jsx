@@ -34,14 +34,18 @@ export function Header() {
           </nav>
         </div>
         <div className="hidden md:flex items-center space-x-2">
-          <Button variant="ghost" className="text-gray-300 hover:text-black">
-            <User className="w-5 h-5 mr-2" />
-            <span>Sign In</span>
-          </Button>
-          <Button className="bg-[#00dc81] hover:bg-[#00b368] text-black">
-            <UserPlus className="w-5 h-5 mr-2" />
-            <span>Sign Up</span>
-          </Button>
+          <Link href="/dashboard">
+            <Button variant="ghost" className="text-gray-300 hover:text-black">
+              <User className="w-5 h-5 mr-2" />
+              <span>Sign In</span>
+            </Button>
+          </Link>
+          <Link href="/dashboard">
+            <Button className="bg-[#00dc81] hover:bg-[#00b368] text-black">
+              <UserPlus className="w-5 h-5 mr-2" />
+              <span>Sign Up</span>
+            </Button>
+          </Link>
         </div>
         <Button variant="ghost" className="md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
           <Menu className="w-6 h-6" />
@@ -65,14 +69,18 @@ export function Header() {
             </Link>
           </nav>
           <div className="mt-4 space-y-2">
-            <Button variant="ghost" className="w-full text-gray-300 hover:text-black justify-start">
-              <User className="w-5 h-5 mr-2" />
-              <span>Sign In</span>
-            </Button>
-            <Button className="w-full bg-[#00dc81] hover:bg-[#00b368] text-white justify-start">
-              <UserPlus className="w-5 h-5 mr-2" />
-              <span>Sign Up</span>
-            </Button>
+            <Link href="/dashboard">
+              <Button variant="ghost" className="w-full text-gray-300 hover:text-black justify-start">
+                <User className="w-5 h-5 mr-2" />
+                <span>Sign In</span>
+              </Button>
+            </Link>
+            <Link href="/dashboard">
+              <Button className="w-full bg-[#00dc81] hover:bg-[#00b368] text-white justify-start">
+                <UserPlus className="w-5 h-5 mr-2" />
+                <span>Sign Up</span>
+              </Button>
+            </Link>
           </div>
         </motion.div>
       )}
