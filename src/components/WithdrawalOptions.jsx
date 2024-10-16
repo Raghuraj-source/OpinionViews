@@ -68,3 +68,4 @@ export default function WithdrawalOptions() {
     </section>
   );
 }
+// Compare this snippet from src/components/WithdrawalOptions.jsx:
