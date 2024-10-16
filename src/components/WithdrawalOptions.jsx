@@ -1,4 +1,3 @@
-
 import Image from 'next/image';
 import { Card } from "@/components/ui/card";
 
@@ -26,9 +25,11 @@ const giftcardOptions = [
 
 function WithdrawalOption({ name, icon, color }) {
   return (
-    <Card className={`${color} p-4 flex flex-col items-center justify-center rounded-lg aspect-[3/4]`}>
-      <Image src={icon} alt={name} width={80} height={80} className="mb-2" />
-      <p className="text-white text-sm font-medium text-center">{name}</p>
+    <Card className={`${color} p-4 flex flex-col items-center justify-between rounded-lg w-32 h-48`}>
+      <div className="flex-grow flex items-center justify-center">
+        <Image src={icon} alt={name} width={80} height={80} />
+      </div>
+      <p className="text-white text-sm font-medium text-center mt-2">{name}</p>
     </Card>
   );
 }
