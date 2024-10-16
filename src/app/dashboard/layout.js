@@ -16,7 +16,7 @@ export default function DashboardLayout({ children }) {
       <UserHeader toggleSidebar={toggleSidebar} />
       <div className="flex flex-1 overflow-hidden pt-16"> {/* Adjusted padding-top to account for fixed header */}
         <UserSidebar isOpen={isSidebarOpen} />
-        <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarOpen ? 'ml-40' : 'ml-0'} md:ml-40`}>
+        <div className={`flex-1 flex flex-col transition-all duration-300 ${isSidebarOpen ? 'ml-44' : 'ml-0'} md:ml-44`}>
           <main className="flex-1 overflow-y-auto p-4 md:p-6 lg:p-8">
             {children}
           </main>
