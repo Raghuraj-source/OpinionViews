@@ -14,7 +14,7 @@ export default function AffiliatesDashboard() {
             How it works
           </Button>
         </div>
-        
+
         <Card className="bg-gray-800 border-gray-700">
           <CardContent className="p-6">
             <div className="flex flex-col md:flex-row md:items-center justify-between space-y-4 md:space-y-0">
@@ -52,13 +52,13 @@ export default function AffiliatesDashboard() {
             <h2 className="text-xl font-semibold">Your referral link</h2>
             <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2">
               <div className="flex-grow relative">
-                <Input 
-                  value="freecash.com/r/1bd76748a6f48386248e"
+                <Input
+                  value="Opinion Views.com/r/1bd76748a6f48386248e"
                   readOnly
                   className="bg-gray-700 text-white pr-24 w-full border-gray-600"
                 />
-                <Button 
-                  variant="ghost" 
+                <Button
+                  variant="ghost"
                   className="absolute right-1 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-white"
                 >
                   <CopyIcon className="w-4 h-4 mr-2" />

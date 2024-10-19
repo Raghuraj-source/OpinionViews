@@ -1,6 +1,8 @@
 // import ProgressBar from '@/components/user-dashboard/ProgressBar'
 import FeaturedOffers from '@/components/user-dashboard/FeaturedOffers'
 import FeaturedSurveys from '@/components/user-dashboard/FeaturedSurveys'
+import OfferWall from '@/components/user-dashboard/OfferWall'
+import SurveyPartner from '@/components/user-dashboard/SurveyPartner'
 
 export default function Dashboard() {
   return (
@@ -11,6 +13,8 @@ export default function Dashboard() {
        </div> 
       <FeaturedOffers />
       <FeaturedSurveys />
+      <OfferWall />
+      <SurveyPartner />
     </>
   )
 }

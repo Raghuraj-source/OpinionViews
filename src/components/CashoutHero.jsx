@@ -10,7 +10,7 @@ export default function Hero() {
           <span className="text-green-400">your earnings</span>
         </h1>
         <p className="text-lg md:text-2xl mb-8 mt-4 max-w-2xl mx-auto">
-          Use your earned coins on Freecash.com to withdraw PayPal, Bitcoin, VISA, Amazon & much more!
+          Use your earned coins on Opinion Views.com to withdraw PayPal, Bitcoin, VISA, Amazon & much more!
           <br />
           Crypto withdrawals start from $0.50, Stake withdrawals at $0.25
         </p>

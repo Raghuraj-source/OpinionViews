@@ -13,7 +13,7 @@ const faqData = [
   },
   {
     question: "How much money can you really earn on Opinion Views?",
-    answer: "It is easily possible to earn more than $100 per month on Freecash, some users even reach $1000+ each month. You can check out the leaderboard to see how much the most active Freecash users earn.",
+    answer: "It is easily possible to earn more than $100 per month on Opinion Views, some users even reach $1000+ each month. You can check out the leaderboard to see how much the most active Opinion Views users earn.",
   },
   {
     question: "How long does it take to cash out your money?",

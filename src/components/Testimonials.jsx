@@ -9,7 +9,7 @@ const testimonials = [
   {
     rating: 5,
     title: "If you need some extra cash this is your app",
-    content: "Here is my honest review of Freecash. You are not going to earn a full time income from this app (unless you have a lot",
+    content: "Here is my honest review of Opinion Views. You are not going to earn a full time income from this app (unless you have a lot",
     author: "Alvaro de la Llave",
     date: "May 07, 2024",
     avatar: "/user.png"
@@ -83,7 +83,7 @@ export default function Testimonials() {
   return (
     <section className="bg-[#08205D] py-2 px-4 sm:px-2 lg:px-8 pt-2 pb-0">
       <div className="max-w-7xl mx-auto">
-        <motion.h2 
+        <motion.h2
           className="text-5xl font-bold font-sans mb-2 mt-0 text-center text-[#e2ad3b]"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -91,7 +91,7 @@ export default function Testimonials() {
         >
           Everyone&apos;s talking about Opinion Views
         </motion.h2>
-        <motion.p 
+        <motion.p
           className="text-2xl font-bold font-sans mb-6 text-center text-[#e23bda]"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -99,23 +99,23 @@ export default function Testimonials() {
         >
           Join the Opinion Views Revolution Discover Why Everyone&apos;s Talking About Our Money-Making Platform!
         </motion.p>
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {testimonials.map((testimonial, index) => (
-            <motion.div 
-              key={index} 
+            <motion.div
+              key={index}
               variants={cardVariants}
-              whileHover={{ 
-                scale: 1.05, 
-                transition: { duration: 0.2 } 
+              whileHover={{
+                scale: 1.05,
+                transition: { duration: 0.2 }
               }}
             >
               <Card className="bg-gradient-to-br from-[#6e0f9b] to-[#b22222] text-foreground p-6 flex flex-col items-start h-full">
-                <motion.div 
+                <motion.div
                   className="flex mb-4"
                   whileHover={{ scale: 1.1 }}
                 >
@@ -123,20 +123,20 @@ export default function Testimonials() {
                     <StarIcon key={i} className="h-5 w-5 text-primary fill-current" />
                   ))}
                 </motion.div>
-                <motion.h3 
+                <motion.h3
                   className="text-lg font-semibold text-foreground mb-2"
                   whileHover={{ scale: 1.05, color: "#e2ad3b" }}
                 >
                   {testimonial.title}
                 </motion.h3>
-                <motion.p 
+                <motion.p
                   className="text-muted-foreground mb-4 flex-grow"
                   whileHover={{ color: "#ffffff" }}
                 >
                   {testimonial.content}
                 </motion.p>
                 {testimonial.author && (
-                  <motion.div 
+                  <motion.div
                     className="flex items-center mt-auto"
                     whileHover={{ scale: 1.05 }}
                   >
@@ -150,7 +150,7 @@ export default function Testimonials() {
                       />
                     </div>
                     <div>
-                      <motion.p 
+                      <motion.p
                         className="text-sm font-medium text-foreground"
                         whileHover={{ color: "#e2ad3b" }}
                       >

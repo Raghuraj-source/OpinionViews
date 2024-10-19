@@ -21,7 +21,7 @@ export default function NumberOne() {
           <FeatureCard
             icon={<Banknote className="w-8 h-8 text-[#00ff7f]" />}
             title="Highest payouts"
-            description="At Freecash, we offer more than 500 gaming-related tasks, which are continuously available for our members. We have the highest payouts in the industry!"
+            description="At Opinion Views, we offer more than 500 gaming-related tasks, which are continuously available for our members. We have the highest payouts in the industry!"
           />
           <FeatureCard
             icon={<Flag className="w-8 h-8 text-[#00ff7f]" />}

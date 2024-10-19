@@ -20,11 +20,11 @@ export default function Header({ toggleSidebar }) {
           />
         </Link>
         <Button variant="outline" className="hidden md:flex text-[#ff9800] border-[#ff9800] hover:bg-[#ff9800] hover:text-white transition-colors duration-300">
-          <Gift className="mr-2 h-4 w-4" /> Win up to $250!
+          <Gift className="mr-2 h-4 w-4" /> Win up to $100!
         </Button>
-        <Button variant="outline" className="hidden lg:flex text-[#4caf50] border-[#4caf50] hover:bg-[#4caf50] hover:text-white transition-colors duration-300">
+        {/* <Button variant="outline" className="hidden lg:flex text-[#4caf50] border-[#4caf50] hover:bg-[#4caf50] hover:text-white transition-colors duration-300">
           <ChevronRight className="mr-2 h-4 w-4" /> Download our app
-        </Button>
+        </Button> */}
       </div>
       <div className="flex items-center space-x-2 md:space-x-4">
         <div className="bg-[#1a3957] rounded-full px-2 py-1 md:px-4 md:py-2 flex items-center">
