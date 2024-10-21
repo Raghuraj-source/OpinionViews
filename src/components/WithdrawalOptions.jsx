@@ -1,9 +1,14 @@
+'use client';
+import { useState } from 'react';
 import Image from 'next/image';
 import { Card } from "@/components/ui/card";
+import PayPalWithdrawal from './cashout-cards/PayPalWithdrawal';
+import BitcoinWithdrawal from './cashout-cards/BitcoinWithdrawal';
+import EthereumWithdrawal from './cashout-cards/EthereumWithdrawal';
 
 const cashOptions = [
   { name: 'PayPal', icon: '/paypal.png', color: 'bg-blue-500' },
-  { name: 'Bitcoin', icon: '/bitcoin.svg', color: 'bg-red-300' },
+  { name: 'Bitcoin', icon: '/bitcoin.svg', color: 'bg-orange-300' },
   { name: 'Airtm', icon: '/airtm.png', color: 'bg-blue-400' },
   { name: 'Stake', icon: '/stake.jpg', color: 'bg-teal-900' },
   { name: 'Ethereum', icon: '/Ethereum.png', color: 'bg-purple-500' },
@@ -23,9 +28,12 @@ const giftcardOptions = [
   { name: 'Steam', icon: '/stream.webp', color: 'bg-blue-900' },
 ];
 
-function WithdrawalOption({ name, icon, color }) {
+function WithdrawalOption({ name, icon, color, onClick }) {
   return (
-    <Card className={`${color} p-4 flex flex-col items-center justify-between rounded-lg w-32 h-48`}>
+    <Card 
+      className={`${color} p-4 flex flex-col items-center justify-between rounded-lg w-32 h-48 cursor-pointer`}
+      onClick={onClick}
+    >
       <div className="flex-grow flex items-center justify-center">
         <Image src={icon} alt={name} width={80} height={80} />
       </div>
@@ -35,8 +43,14 @@ function WithdrawalOption({ name, icon, color }) {
 }
 
 export default function WithdrawalOptions() {
+  const [selectedOption, setSelectedOption] = useState(null);
+
+  const handleClose = () => {
+    setSelectedOption(null);
+  };
+
   return (
-    <section className="bg-[#08205D] py-2 px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#08205D] py-2 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
           <h2 className="text-2xl font-bold text-foreground flex items-center mb-4">
@@ -47,7 +61,11 @@ export default function WithdrawalOptions() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
             {cashOptions.map((option) => (
-              <WithdrawalOption key={option.name} {...option} />
+              <WithdrawalOption 
+                key={option.name} 
+                {...option} 
+                onClick={() => setSelectedOption(option.name)}
+              />
             ))}
           </div>
         </div>
@@ -60,12 +78,25 @@ export default function WithdrawalOptions() {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4">
             {giftcardOptions.map((option) => (
-              <WithdrawalOption key={option.name} {...option} />
+              <WithdrawalOption 
+                key={option.name} 
+                {...option} 
+                onClick={() => setSelectedOption(option.name)}
+              />
             ))}
           </div>
         </div>
       </div>
+      
+      {selectedOption === 'PayPal' && (
+        <PayPalWithdrawal onClose={handleClose} />
+      )}
+      {selectedOption === 'Bitcoin' && (
+        <BitcoinWithdrawal onClose={handleClose} />
+      )}
+      {selectedOption === 'Ethereum' && (
+        <EthereumWithdrawal onClose={handleClose} />
+      )}
     </section>
   );
 }
-// Comparee this snippet from src/components/WithdrawalOptions.jsx:
